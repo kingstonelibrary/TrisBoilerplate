@@ -220,7 +220,7 @@ var __wpo = {
   },
   strategy: 'changed',
   responseStrategy: 'cache-first',
-  version: '2020-3-8 11:35:04',
+  version: '2020-3-8 11:35:05',
   name: 'webpack-offline',
   pluginVersion: '5.0.7',
   relativePaths: true
@@ -786,7 +786,7 @@ self.addEventListener("push", function(event) {
            }
          }
          // console.log('e.data.type:' + e.data.type);
-         const port = ev.ports[0];
+         const port = e.ports[0];
          if (e.data.type === 'updateDESU!') {
            caches.keys().then(function(e) {																	// keysでキャッシュ名群を配列で取得 →１つ１つ槊杖する処理
              var n = e.map(function(e) {
